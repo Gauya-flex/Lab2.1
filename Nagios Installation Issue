@@ -1,0 +1,1572 @@
+e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_disk_smb.pl > check_dis                                                                                        k_smb
+chmod +x check_breeze
+chmod +x check_disk_smb
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_flexlm.pl > check_flexl                                                                                        m
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_ircd.pl > check_ircd
+chmod +x check_flexlm
+chmod +x check_ircd
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_log.sh > check_log
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_oracle.sh > check_oracl                                                                                        e
+chmod +x check_log
+chmod +x check_oracle
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_rpc.pl > check_rpc
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_sensors.sh > check_sens                                                                                        ors
+chmod +x check_rpc
+chmod +x check_sensors
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_wave.pl > check_wave
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_ifstatus.pl > check_ifs                                                                                        tatus
+chmod +x check_wave
+chmod +x check_ifstatus
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_ifoperstatus.pl > check                                                                                        _ifoperstatus
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_mailq.pl > check_mailq
+chmod +x check_ifoperstatus
+sed -e 's|[@]NP_VERSION[@]|2.2.1|g' -e 's|[@]TRUSTED_PATH[@]|/usr/local/sbin:/us                                                                                        r/local/bin:/sbin:/bin:/usr/sbin:/usr/bin|g' -e 's|[@]PERL[@]|/usr/bin/perl|g' -                                                                                        e 's|[@]libexecdir[@]|/usr/local/nagios/libexec|g' check_file_age.pl > check_fil                                                                                        e_age
+chmod +x check_mailq
+cd .. && /bin/bash ./config.status plugins-scripts/utils.sh
+chmod +x check_file_age
+cd .. && /bin/bash ./config.status plugins-scripts/utils.pm
+config.status: creating plugins-scripts/utils.sh
+config.status: creating plugins-scripts/utils.pm
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins-scripts'
+Making all in plugins-root
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/plugins-root'
+gcc -DLOCALEDIR=\"/usr/local/nagios/share/locale\" -DHAVE_CONFIG_H -I. -I..  -I.                                                                                        . -I../lib -I../gl -I../intl -I../plugins -I/usr/include  -DNP_VERSION='"2.2.1"'                                                                                         -g -O2 -MT check_dhcp.o -MD -MP -MF .deps/check_dhcp.Tpo -c -o check_dhcp.o che                                                                                        ck_dhcp.c
+gcc -DLOCALEDIR=\"/usr/local/nagios/share/locale\" -DHAVE_CONFIG_H -I. -I..  -I.                                                                                        . -I../lib -I../gl -I../intl -I../plugins -I/usr/include  -DNP_VERSION='"2.2.1"'                                                                                         -g -O2 -MT check_icmp.o -MD -MP -MF .deps/check_icmp.Tpo -c -o check_icmp.o che                                                                                        ck_icmp.c
+check_icmp.c: In function ‘main’:
+check_icmp.c:416:2: warning: ignoring return value of ‘setuid’, declared with at                                                                                        tribute warn_unused_result [-Wunused-result]
+  setuid(getuid());
+  ^
+check_icmp.c: In function ‘finish’:
+check_icmp.c:1056:13: warning: ignoring return value of ‘write’, declared with a                                                                                        ttribute warn_unused_result [-Wunused-result]
+   if(debug) write(STDOUT_FILENO, "\n", 1);
+             ^
+check_icmp.c:1058:20: warning: ignoring return value of ‘write’, declared with a                                                                                        ttribute warn_unused_result [-Wunused-result]
+    if(i < targets) write(STDOUT_FILENO, " :: ", 4);
+                    ^
+check_icmp.c:1059:9: warning: ignoring return value of ‘write’, declared with at                                                                                        tribute warn_unused_result [-Wunused-result]
+    else write(STDOUT_FILENO, "\n", 1);
+         ^
+check_icmp.c:1087:13: warning: ignoring return value of ‘write’, declared with a                                                                                        ttribute warn_unused_result [-Wunused-result]
+   if(debug) write(STDOUT_FILENO, "\n", 1);
+             ^
+mv -f .deps/check_dhcp.Tpo .deps/check_dhcp.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc -DNP_VERSION='"2.2.1"' -g -O2  -                                                                                        L. -o check_dhcp check_dhcp.o ../plugins/netutils.o ../plugins/utils.o ../lib/li                                                                                        bnagiosplug.a ../gl/libgnu.a  -lnsl -lresolv -lpthread -ldl
+libtool: link: gcc -DNP_VERSION=\"2.2.1\" -g -O2 -o check_dhcp check_dhcp.o ../p                                                                                        lugins/netutils.o ../plugins/utils.o  -L. ../lib/libnagiosplug.a ../gl/libgnu.a                                                                                         -lnsl -lresolv -lpthread -ldl
+mv -f .deps/check_icmp.Tpo .deps/check_icmp.Po
+/bin/bash ../libtool --tag=CC   --mode=link gcc -DNP_VERSION='"2.2.1"' -g -O2  -                                                                                        L. -o check_icmp check_icmp.o ../plugins/netutils.o ../plugins/utils.o ../lib/li                                                                                        bnagiosplug.a ../gl/libgnu.a  -lnsl -lresolv -lnsl -lresolv -lpthread -ldl
+libtool: link: gcc -DNP_VERSION=\"2.2.1\" -g -O2 -o check_icmp check_icmp.o ../p                                                                                        lugins/netutils.o ../plugins/utils.o  -L. ../lib/libnagiosplug.a ../gl/libgnu.a                                                                                         -lnsl -lresolv -lpthread -ldl
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins-root'
+Making all in po
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/po'
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1'
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1'
+
+real    0m19.195s
+user    0m28.120s
+sys     0m4.182s
+Making install in gl
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/gl'
+make  install-recursive
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/gl'
+make[3]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/gl'
+make[4]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/gl'
+if test yes = no; then \
+  case 'linux-gnu' in \
+    darwin[56]*) \
+      need_charset_alias=true ;; \
+    darwin* | cygwin* | mingw* | pw32* | cegcc*) \
+      need_charset_alias=false ;; \
+    *) \
+      need_charset_alias=true ;; \
+  esac ; \
+else \
+  need_charset_alias=false ; \
+fi ; \
+if $need_charset_alias; then \
+  /bin/bash ../build-aux/mkinstalldirs /usr/local/nagios/lib ; \
+fi ; \
+if test -f /usr/local/nagios/lib/charset.alias; then \
+  sed -f ref-add.sed /usr/local/nagios/lib/charset.alias > /usr/local/nagios/lib                                                                                        /charset.tmp ; \
+  /usr/bin/install -c  -m 644 /usr/local/nagios/lib/charset.tmp /usr/local/nagio                                                                                        s/lib/charset.alias ; \
+  rm -f /usr/local/nagios/lib/charset.tmp ; \
+else \
+  if $need_charset_alias; then \
+    sed -f ref-add.sed charset.alias > /usr/local/nagios/lib/charset.tmp ; \
+    /usr/bin/install -c  -m 644 /usr/local/nagios/lib/charset.tmp /usr/local/nag                                                                                        ios/lib/charset.alias ; \
+    rm -f /usr/local/nagios/lib/charset.tmp ; \
+  fi ; \
+fi
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/gl'
+make[3]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/gl'
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/gl'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/gl'
+Making install in tap
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/tap'
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/tap'
+make[2]: Nothing to be done for 'install-exec-am'.
+test -z "/usr/local/nagios/include" || /bin/mkdir -p "/usr/local/nagios/include"
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/tap'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/tap'
+Making install in lib
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/lib'
+Making install in .
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/lib'
+make[3]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/lib'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/lib'
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/lib'
+Making install in tests
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/lib/tests'
+make[3]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/lib/tests'
+make[3]: Nothing to be done for 'install-exec-am'.
+make[3]: Nothing to be done for 'install-data-am'.
+make[3]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/lib/tests'
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/lib/tests'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/lib'
+Making install in plugins
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/plugins'
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/plugins'
+test -z "/usr/local/nagios/libexec" || /bin/mkdir -p "/usr/local/nagios/libexec"
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c  check_apt check_clu                                                                                        ster check_disk check_dummy check_http check_load check_mrtg check_mrtgtraf chec                                                                                        k_ntp check_ntp_peer check_nwstat check_overcr check_ping check_real check_smtp                                                                                         check_ssh check_tcp check_time check_ntp_time check_ups check_users negate urliz                                                                                        e check_pgsql check_ldap check_ide_smart check_uptime check_mysql check_mysql_qu                                                                                        ery check_procs check_nagios check_dns check_hpjd check_snmp check_fping check_b                                                                                        y_ssh check_swap check_dig check_apt check_nt '/usr/local/nagios/libexec'
+libtool: install: /usr/bin/install -c check_apt /usr/local/nagios/libexec/check_                                                                                        apt
+libtool: install: /usr/bin/install -c check_cluster /usr/local/nagios/libexec/ch                                                                                        eck_cluster
+libtool: install: /usr/bin/install -c check_disk /usr/local/nagios/libexec/check                                                                                        _disk
+libtool: install: /usr/bin/install -c check_dummy /usr/local/nagios/libexec/chec                                                                                        k_dummy
+libtool: install: /usr/bin/install -c check_http /usr/local/nagios/libexec/check                                                                                        _http
+libtool: install: /usr/bin/install -c check_load /usr/local/nagios/libexec/check                                                                                        _load
+libtool: install: /usr/bin/install -c check_mrtg /usr/local/nagios/libexec/check                                                                                        _mrtg
+libtool: install: /usr/bin/install -c check_mrtgtraf /usr/local/nagios/libexec/c                                                                                        heck_mrtgtraf
+libtool: install: /usr/bin/install -c check_ntp /usr/local/nagios/libexec/check_                                                                                        ntp
+libtool: install: /usr/bin/install -c check_ntp_peer /usr/local/nagios/libexec/c                                                                                        heck_ntp_peer
+libtool: install: /usr/bin/install -c check_nwstat /usr/local/nagios/libexec/che                                                                                        ck_nwstat
+libtool: install: /usr/bin/install -c check_overcr /usr/local/nagios/libexec/che                                                                                        ck_overcr
+libtool: install: /usr/bin/install -c check_ping /usr/local/nagios/libexec/check                                                                                        _ping
+libtool: install: /usr/bin/install -c check_real /usr/local/nagios/libexec/check                                                                                        _real
+libtool: install: /usr/bin/install -c check_smtp /usr/local/nagios/libexec/check                                                                                        _smtp
+libtool: install: /usr/bin/install -c check_ssh /usr/local/nagios/libexec/check_                                                                                        ssh
+libtool: install: /usr/bin/install -c check_tcp /usr/local/nagios/libexec/check_                                                                                        tcp
+libtool: install: /usr/bin/install -c check_time /usr/local/nagios/libexec/check                                                                                        _time
+libtool: install: /usr/bin/install -c check_ntp_time /usr/local/nagios/libexec/c                                                                                        heck_ntp_time
+libtool: install: /usr/bin/install -c check_ups /usr/local/nagios/libexec/check_                                                                                        ups
+libtool: install: /usr/bin/install -c check_users /usr/local/nagios/libexec/chec                                                                                        k_users
+libtool: install: /usr/bin/install -c negate /usr/local/nagios/libexec/negate
+libtool: install: /usr/bin/install -c urlize /usr/local/nagios/libexec/urlize
+libtool: install: /usr/bin/install -c check_pgsql /usr/local/nagios/libexec/chec                                                                                        k_pgsql
+libtool: install: /usr/bin/install -c check_ldap /usr/local/nagios/libexec/check                                                                                        _ldap
+libtool: install: /usr/bin/install -c check_ide_smart /usr/local/nagios/libexec/                                                                                        check_ide_smart
+libtool: install: /usr/bin/install -c check_uptime /usr/local/nagios/libexec/che                                                                                        ck_uptime
+libtool: install: /usr/bin/install -c check_mysql /usr/local/nagios/libexec/chec                                                                                        k_mysql
+libtool: install: /usr/bin/install -c check_mysql_query /usr/local/nagios/libexe                                                                                        c/check_mysql_query
+libtool: install: /usr/bin/install -c check_procs /usr/local/nagios/libexec/chec                                                                                        k_procs
+libtool: install: /usr/bin/install -c check_nagios /usr/local/nagios/libexec/che                                                                                        ck_nagios
+libtool: install: /usr/bin/install -c check_dns /usr/local/nagios/libexec/check_                                                                                        dns
+libtool: install: /usr/bin/install -c check_hpjd /usr/local/nagios/libexec/check                                                                                        _hpjd
+libtool: install: /usr/bin/install -c check_snmp /usr/local/nagios/libexec/check                                                                                        _snmp
+libtool: install: /usr/bin/install -c check_fping /usr/local/nagios/libexec/chec                                                                                        k_fping
+libtool: install: /usr/bin/install -c check_by_ssh /usr/local/nagios/libexec/che                                                                                        ck_by_ssh
+libtool: install: /usr/bin/install -c check_swap /usr/local/nagios/libexec/check                                                                                        _swap
+libtool: install: /usr/bin/install -c check_dig /usr/local/nagios/libexec/check_                                                                                        dig
+libtool: install: /usr/bin/install -c check_apt /usr/local/nagios/libexec/check_                                                                                        apt
+libtool: install: /usr/bin/install -c check_nt /usr/local/nagios/libexec/check_n                                                                                        t
+make  install-exec-hook
+make[3]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/plugins'
+cd /usr/local/nagios/libexec && \
+for i in check_ftp check_imap check_nntp check_pop check_udp check_clamd check_s                                                                                        imap check_spop check_jabber check_nntps check_ssmtp ; do rm -f $i; ln -s check_                                                                                        tcp $i ; done ;\
+if [ -x check_ldap ] ; then rm -f check_ldaps ; ln -s check_ldap check_ldaps ; f                                                                                        i
+make[3]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins'
+Making install in plugins-scripts
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/plugins-scripts'
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/plugins-scripts'
+test -z "/usr/local/nagios/libexec" || /bin/mkdir -p "/usr/local/nagios/libexec"
+ /usr/bin/install -c  check_breeze check_disk_smb check_flexlm check_ircd check_                                                                                        log check_oracle check_rpc check_sensors check_wave check_ifstatus check_ifopers                                                                                        tatus check_mailq check_file_age utils.sh utils.pm '/usr/local/nagios/libexec'
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins-scripts'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins-scripts'
+Making install in plugins-root
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/plugins-root'
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/plugins-root'
+ /usr/bin/install -c  check_dhcp /usr/local/nagios/libexec/check_dhcp
+ chown root /usr/local/nagios/libexec/check_dhcp
+ chmod ug=rx,u+s /usr/local/nagios/libexec/check_dhcp
+ /usr/bin/install -c  check_icmp /usr/local/nagios/libexec/check_icmp
+ chown root /usr/local/nagios/libexec/check_icmp
+ chmod ug=rx,u+s /usr/local/nagios/libexec/check_icmp
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins-root'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/plugins-root'
+Making install in po
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1/po'
+/bin/mkdir -p /usr/local/nagios/share
+installing fr.gmo as /usr/local/nagios/share/locale/fr/LC_MESSAGES/nagios-plugin                                                                                        s.mo
+installing de.gmo as /usr/local/nagios/share/locale/de/LC_MESSAGES/nagios-plugin                                                                                        s.mo
+if test "nagios-plugins" = "gettext-tools"; then \
+  /bin/mkdir -p /usr/local/nagios/share/gettext/po; \
+  for file in Makefile.in.in remove-potcdate.sin    Makevars.template; do \
+    /usr/bin/install -c  -m 644 ./$file \
+                    /usr/local/nagios/share/gettext/po/$file; \
+  done; \
+  for file in Makevars; do \
+    rm -f /usr/local/nagios/share/gettext/po/$file; \
+  done; \
+else \
+  : ; \
+fi
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1/po'
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1'
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-pl                                                                                        ugins-2.2.1'
+make[2]: Nothing to be done for 'install-exec-am'.
+make[2]: Nothing to be done for 'install-data-am'.
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nagiosplugins/nagios-plu                                                                                        gins-2.2.1'
+
+real    0m0.745s
+user    0m0.620s
+sys     0m0.165s
+INSTALL: Nagios Plugins installed OK.
+Subcomponent 'nagiosplugins' installed OK
+INSTALL: NDOUtils is being installed...
+INSTALL: Applying patches...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for perl... /usr/bin/perl
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether make sets $(MAKE)... yes
+checking what the operating system is ... linux
+checking what the distribution type is ... debian
+checking what init system is being used ... systemd
+checking what inetd is being used ... xinetd
+checking for which paths to use ... default
+checking for which init file to use ... default-service
+checking for which inetd files to use ... default-xinetd
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking dlfcn.h usability... yes
+checking dlfcn.h presence... yes
+checking for dlfcn.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking for inttypes.h... (cached) yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking ltdl.h usability... yes
+checking ltdl.h presence... yes
+checking for ltdl.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking socket.h usability... no
+checking socket.h presence... no
+checking for socket.h... no
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking for stdint.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking sys/ipc.h usability... yes
+checking sys/ipc.h presence... yes
+checking for sys/ipc.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/msg.h usability... yes
+checking sys/msg.h presence... yes
+checking for sys/msg.h... yes
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/sendfile.h usability... yes
+checking sys/sendfile.h presence... yes
+checking for sys/sendfile.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/un.h usability... yes
+checking sys/un.h presence... yes
+checking for sys/un.h... yes
+checking for sys/wait.h... (cached) yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking tcpd.h usability... yes
+checking tcpd.h presence... yes
+checking for tcpd.h... yes
+checking for unistd.h... (cached) yes
+checking values.h usability... yes
+checking values.h presence... yes
+checking for values.h... yes
+checking for an ANSI C-conforming const... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for mode_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking return type of signal handlers... void
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking size of int... 4
+checking size of short... 2
+checking size of long... 8
+checking for uint32_t... yes
+checking for u_int32_t... yes
+checking for int32_t... yes
+checking for main in -lnsl... yes
+checking for socket in -lsocket... no
+checking for main in -lwrap... yes
+checking for getopt_long... yes
+checking for strdup... yes
+checking for strstr... yes
+checking for strtoul... yes
+checking for initgroups... yes
+checking for strtof... yes
+checking for nanosleep... yes
+checking for va_copy... yes
+checking for snprintf... yes
+checking for asprintf... yes
+checking for type of socket size... size_t
+checking for linker flags for loadable modules... -shared
+checking for mysql_config... /usr/bin/mysql_config
+checking for mysql_init in -lmysqlclient... yes
+MySQL library and include file(s) were found!
+checking for library containing sd_listen_fds... no
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating config/ndo2db.cfg-sample
+config.status: creating config/ndomod.cfg-sample
+config.status: creating config/nagios.cfg
+config.status: creating config/misccommands.cfg
+config.status: creating docs/docbook/en-en/Makefile
+config.status: creating include/io.h
+config.status: creating include/common.h
+config.status: creating startup/bsd-init
+config.status: creating startup/debian-init
+config.status: creating startup/default-init
+config.status: creating startup/default-inetd
+config.status: creating startup/default-service
+config.status: creating startup/default-socket
+config.status: creating startup/default-socket-svc
+config.status: creating startup/default-xinetd
+config.status: creating startup/mac-init.plist
+config.status: creating startup/mac-inetd.plist
+config.status: creating startup/newbsd-init
+config.status: creating startup/openbsd-init
+config.status: creating startup/openrc-conf
+config.status: creating startup/openrc-init
+config.status: creating startup/solaris-init.xml
+config.status: creating startup/solaris-inetd.xml
+config.status: creating startup/tmpfile.conf
+config.status: creating startup/upstart-init
+config.status: creating startup/rh-upstart-init
+config.status: creating include/config.h
+
+
+*** Configuration summary for ndoutils 2.1.3 2017-04-13 ***:
+
+ General Options:
+ -------------------------
+ NDO2DB user:      nagios
+ NDO2DB group:     nagios
+ NDO2DB tcp port:  5668
+
+
+Review the options above for accuracy.  If they look
+okay, type 'make all' to compile the NDO utilities,
+or type 'make' to get a list of make options.
+
+cd ./src && make
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3                                                                                        /src'
+gcc -fPIC -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -c -o io.o io.c
+gcc -fPIC -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -c -o utils.o utils                                                                                        .c
+utils.c: In function ‘my_rename’:
+utils.c:142:7: warning: ignoring return value of ‘write’, declared with attribut                                                                                        e warn_unused_result [-Wunused-result]
+       write(dest_fd,buffer,bytes_read);
+       ^
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -o file2sock file2sock.c                                                                                         io.o utils.o   -lm -lnsl
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -o log2ndo log2ndo.c io.o                                                                                         utils.o   -lm -lnsl
+make ndo2db-2x
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3                                                                                        /src'
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -c -o db.o db.c
+db.c: In function ‘ndo2db_db_hello’:
+db.c:265:5: warning: implicit declaration of function ‘asprintf’ [-Wimplicit-fun                                                                                        ction-declaration]
+  if(asprintf(&buf,"SELECT instance_id FROM %s WHERE instance_name='%s'",ndo2db_                                                                                        db_tablenames[NDO2DB_DBTABLE_INSTANCES],idi->instance_name)==-1)
+     ^
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -D BUILD_NAGIOS_2X -c -o                                                                                         dbhandlers-2x.o dbhandlers.c
+dbhandlers.c: In function ‘ndo2db_get_object_id’:
+dbhandlers.c:98:6: warning: implicit declaration of function ‘asprintf’ [-Wimpli                                                                                        cit-function-declaration]
+   if(asprintf(&buf1,"name1 IS NULL")==-1)
+      ^
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H   -D BUILD_NAGIOS_2X -o nd                                                                                        o2db-2x queue.c ndo2db.c dbhandlers-2x.o  io.o utils.o db.o    -lnsl -L/usr/lib/                                                                                        x86_64-linux-gnu -lmysqlclient -lpthread -lz -lm -lrt -lssl -lcrypto -ldl -lm
+queue.c: In function ‘log_retry’:
+queue.c:102:20: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+    syslog(LOG_ERR, logmsg);
+                    ^
+queue.c:111:21: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+     syslog(LOG_ERR, logmsg);
+                     ^
+queue.c:118:21: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+     syslog(LOG_ERR, logmsg);
+                     ^
+queue.c: In function ‘get_msgmni’:
+queue.c:75:3: warning: ignoring return value of ‘fgets’, declared with attribute                                                                                         warn_unused_result [-Wunused-result]
+   fgets( buf, sizeof( buf), fp);
+   ^
+ndo2db.c: In function ‘ndo2db_daemonize’:
+ndo2db.c:722:4: warning: implicit declaration of function ‘asprintf’ [-Wimplicit                                                                                        -function-declaration]
+    asprintf(&msg,"Failed to obtain lock on file %s: %s\n", lock_file, strerror(                                                                                        errno));
+    ^
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3/                                                                                        src'
+make ndo2db-3x
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3                                                                                        /src'
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -D BUILD_NAGIOS_3X -c -o                                                                                         dbhandlers-3x.o dbhandlers.c
+dbhandlers.c: In function ‘ndo2db_get_object_id’:
+dbhandlers.c:98:6: warning: implicit declaration of function ‘asprintf’ [-Wimpli                                                                                        cit-function-declaration]
+   if(asprintf(&buf1,"name1 IS NULL")==-1)
+      ^
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H   -D BUILD_NAGIOS_3X -o nd                                                                                        o2db-3x queue.c ndo2db.c dbhandlers-3x.o  io.o utils.o db.o    -lnsl -L/usr/lib/                                                                                        x86_64-linux-gnu -lmysqlclient -lpthread -lz -lm -lrt -lssl -lcrypto -ldl -lm
+queue.c: In function ‘log_retry’:
+queue.c:102:20: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+    syslog(LOG_ERR, logmsg);
+                    ^
+queue.c:111:21: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+     syslog(LOG_ERR, logmsg);
+                     ^
+queue.c:118:21: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+     syslog(LOG_ERR, logmsg);
+                     ^
+queue.c: In function ‘get_msgmni’:
+queue.c:75:3: warning: ignoring return value of ‘fgets’, declared with attribute                                                                                         warn_unused_result [-Wunused-result]
+   fgets( buf, sizeof( buf), fp);
+   ^
+ndo2db.c: In function ‘ndo2db_daemonize’:
+ndo2db.c:722:4: warning: implicit declaration of function ‘asprintf’ [-Wimplicit                                                                                        -function-declaration]
+    asprintf(&msg,"Failed to obtain lock on file %s: %s\n", lock_file, strerror(                                                                                        errno));
+    ^
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3/                                                                                        src'
+make ndo2db-4x
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3                                                                                        /src'
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -I ../include/nagios-4x                                                                                          -D BUILD_NAGIOS_4X -c -o dbhandlers-4x.o dbhandlers.c
+dbhandlers.c: In function ‘ndo2db_get_object_id’:
+dbhandlers.c:98:6: warning: implicit declaration of function ‘asprintf’ [-Wimpli                                                                                        cit-function-declaration]
+   if(asprintf(&buf1,"name1 IS NULL")==-1)
+      ^
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H   -D BUILD_NAGIOS_4X -o nd                                                                                        o2db-4x queue.c ndo2db.c dbhandlers-4x.o  io.o utils.o db.o    -lnsl -L/usr/lib/                                                                                        x86_64-linux-gnu -lmysqlclient -lpthread -lz -lm -lrt -lssl -lcrypto -ldl -lm
+queue.c: In function ‘log_retry’:
+queue.c:102:20: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+    syslog(LOG_ERR, logmsg);
+                    ^
+queue.c:111:21: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+     syslog(LOG_ERR, logmsg);
+                     ^
+queue.c:118:21: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+     syslog(LOG_ERR, logmsg);
+                     ^
+queue.c: In function ‘get_msgmni’:
+queue.c:75:3: warning: ignoring return value of ‘fgets’, declared with attribute                                                                                         warn_unused_result [-Wunused-result]
+   fgets( buf, sizeof( buf), fp);
+   ^
+ndo2db.c: In function ‘ndo2db_daemonize’:
+ndo2db.c:722:4: warning: implicit declaration of function ‘asprintf’ [-Wimplicit                                                                                        -function-declaration]
+    asprintf(&msg,"Failed to obtain lock on file %s: %s\n", lock_file, strerror(                                                                                        errno));
+    ^
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3/                                                                                        src'
+make ndomod-2x.o
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3                                                                                        /src'
+gcc -fPIC -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -D BUILD_NAGIOS_2X                                                                                         -o ndomod-2x.o ndomod.c  io.o utils.o -shared   -lnsl
+ndomod.c: In function ‘ndomod_write_to_sink’:
+ndomod.c:803:6: warning: implicit declaration of function ‘asprintf’ [-Wimplicit                                                                                        -function-declaration]
+      asprintf(&temp_buffer,"ndomod: Successfully reconnected to data sink!  %lu                                                                                         items lost, %lu queued items to flush.",sinkbuf.overflow,sinkbuf.items);
+      ^
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3/                                                                                        src'
+make ndomod-3x.o
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3                                                                                        /src'
+gcc -fPIC -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -D BUILD_NAGIOS_3X                                                                                         -o ndomod-3x.o ndomod.c  io.o utils.o -shared   -lnsl
+ndomod.c: In function ‘ndomod_write_to_sink’:
+ndomod.c:803:6: warning: implicit declaration of function ‘asprintf’ [-Wimplicit                                                                                        -function-declaration]
+      asprintf(&temp_buffer,"ndomod: Successfully reconnected to data sink!  %lu                                                                                         items lost, %lu queued items to flush.",sinkbuf.overflow,sinkbuf.items);
+      ^
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3/                                                                                        src'
+make ndomod-4x.o
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3                                                                                        /src'
+gcc -fPIC -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -I ../include/nagio                                                                                        s-4x  -D BUILD_NAGIOS_4X -o ndomod-4x.o ndomod.c  io.o utils.o -shared   -lnsl
+ndomod.c: In function ‘ndomod_write_to_sink’:
+ndomod.c:803:6: warning: implicit declaration of function ‘asprintf’ [-Wimplicit                                                                                        -function-declaration]
+      asprintf(&temp_buffer,"ndomod: Successfully reconnected to data sink!  %lu                                                                                         items lost, %lu queued items to flush.",sinkbuf.overflow,sinkbuf.items);
+      ^
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3/                                                                                        src'
+gcc -fPIC -g -O2 -I/usr/include/mysql -DHAVE_CONFIG_H  -o sockdebug sockdebug.c                                                                                         io.o utils.o   -lm -lnsl
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/ndoutils/ndoutils-2.1.3/                                                                                        src'
+/usr/bin/install -c -m 644 startup/default-service /lib/systemd/system/ndo2db.se                                                                                        rvice
+INSTALL: POST-INSTALL: Starting NDOUtils post install...
+kernel.msgmnb = 131072000
+kernel.msgmax = 131072000
+kernel.shmmax = 4294967295
+kernel.shmall = 268435456
+NOTE: If prompted, enter the MySQL root password
+mysql: [Warning] Using a password on the command line interface can be insecure.
+DBD::mysql::db do failed: Table 'nagios.nagios_dbversion' doesn't exist at ./ins                                                                                        talldb line 52.
+** Creating tables for version 2.0.1
+     Using mysql.sql for installation...
+mysql: [Warning] Using a password on the command line interface can be insecure.
+** Updating table nagios_dbversion
+Done!
+INSTALL: POST-INSTALL: NDOUtils post installed OK.
+NOTE: If prompted, enter the MySQL root password
+NDOUtils database appears OK
+NDOUtils installed OK
+Subcomponent 'ndoutils' installed OK
+INSTALL: PNP is being installed...
+INSTALL: Applying Nagios XI patches to PNP...
+patching file pnp-latest/src/npcd.c
+checking for a BSD-compatible install... /usr/bin/install -c
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables...
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether make sets $(MAKE)... yes
+checking for strip... /usr/bin/strip
+checking for cp... /bin/cp
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking stdio.h usability... yes
+checking stdio.h presence... yes
+checking for stdio.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking for unistd.h... (cached) yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for stdlib.h... (cached) yes
+checking for dirent.h... (cached) yes
+checking for string.h... (cached) yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking for sys/types.h... (cached) yes
+checking for sys/wait.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking sys/loadavg.h usability... no
+checking sys/loadavg.h presence... no
+checking for sys/loadavg.h... no
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking for pid_t... yes
+checking return type of signal handlers... void
+checking for uid_t in sys/types.h... yes
+checking for struct dirent.d_type... yes
+checking vfork.h usability... no
+checking vfork.h presence... no
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for bzero... yes
+checking for socket... yes
+checking for alarm... yes
+checking for strerror... yes
+checking for strspn... yes
+checking for getloadavg... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking whether lstat dereferences a symlink specified with a trailing slash...                                                                                         yes
+checking whether stat accepts an empty string... no
+checking for an ANSI C-conforming const... yes
+checking for perl... /usr/bin/perl
+checking for rrdtool... /usr/bin/rrdtool
+checking rrdtool path /usr/bin/rrdtool... yes
+checking for executable Bit on /usr/bin/rrdtool... yes
+checking for linker flags for loadable modules... -shared
+checking for Perl Module Time::HiRes... yes
+checking for Perl Module Getopt::Long... yes
+checking for optional Perl Module RRDs... yes
+configure: creating ./config.status
+config.status: creating subst
+config.status: creating include/config.h
+config.status: include/config.h is unchanged
+
+
+*** Configuration summary for pnp 0.4.14 05-02-2009 ***
+
+  General Options:
+  -------------------------         -------------------
+  Nagios user/group:                nagios nagios
+  Install directory:                /usr/local/nagios
+  HTML Dir:                         /usr/local/nagios/share/pnp
+  Config Dir:                       /usr/local/nagios/etc/pnp
+  Location of rrdtool binary:       /usr/bin/rrdtool Version 1.5.5
+  RRDs Perl Modules:                FOUND (Version 1.5001)
+  RRD Files stored in:              /usr/local/nagios/share/perfdata
+  process_perfdata.pl Logfile:      /usr/local/nagios/var/perfdata.log
+  Perfdata files (NPCD) stored in:  /usr/local/nagios/var/spool/perfdata/
+
+
+  Review the options above for accuracy.  If they look okay,
+  type 'make all' to compile.
+
+
+cd ./src && make
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/src'
+gcc -g -O2 -DHAVE_CONFIG_H -DNSCORE   -c -o utils.o utils.c
+gcc -g -O2 -DHAVE_CONFIG_H -DNSCORE   -c -o config.o config.c
+gcc -g -O2 -DHAVE_CONFIG_H -DNSCORE   -c -o logging.o logging.c
+gcc -fPIC -g -O2 -DHAVE_CONFIG_H -DNSCORE -o npcdmod.o npcdmod.c -shared   -fPIC
+logging.c: In function ‘do_log’:
+logging.c:31:3: warning: format not a string literal and no format arguments [-W                                                                                        format-security]
+   syslog(LOG_NOTICE, message);
+   ^
+logging.c: In function ‘write_log’:
+logging.c:50:2: warning: implicit declaration of function ‘gettimeofday’ [-Wimpl                                                                                        icit-function-declaration]
+  gettimeofday(&tv, NULL);
+  ^
+In file included from npcdmod.c:40:0:
+../include/npcdmod.h:41:8: warning: type defaults to ‘int’ in declaration of ‘pn                                                                                        p_strip’ [-Wimplicit-int]
+ extern pnp_strip(char *);
+        ^
+npcdmod.c: In function ‘nebmodule_init’:
+npcdmod.c:85:6: warning: implicit declaration of function ‘npcdmod_process_modul                                                                                        e_args’ [-Wimplicit-function-declaration]
+  if (npcdmod_process_module_args(args) == ERROR) {
+      ^
+npcdmod.c:97:49: warning: too many arguments for format [-Wformat-extra-args]
+  snprintf(temp_buffer, sizeof(temp_buffer) - 1, "npcdmod: spool_dir = '%s'.", s                                                                                        pool_dir, NSLOG_INFO_MESSAGE);
+                                                 ^
+npcdmod.c:97:49: warning: too many arguments for format [-Wformat-extra-args]
+npcdmod.c:101:49: warning: too many arguments for format [-Wformat-extra-args]
+  snprintf(temp_buffer, sizeof(temp_buffer) - 1, "npcdmod: perfdata file '%s'.",                                                                                         perfdata_file, NSLOG_INFO_MESSAGE);
+                                                 ^
+npcdmod.c:101:49: warning: too many arguments for format [-Wformat-extra-args]
+npcdmod.c:108:5: warning: too many arguments for format [-Wformat-extra-args]
+     "npcdmod: Could not open file. %s", strerror(errno),
+     ^
+npcdmod.c:108:5: warning: too many arguments for format [-Wformat-extra-args]
+npcdmod.c: In function ‘npcdmod_file_roller’:
+npcdmod.c:162:22: warning: format ‘%d’ expects argument of type ‘int’, but argum                                                                                        ent 5 has type ‘time_t {aka long int}’ [-Wformat=]
+  sprintf(spool_file, "%s%s.%d", spool_dir, perfdata_spool_filename, current_tim                                                                                        e);
+                      ^
+npcdmod.c:174:5: warning: too many arguments for format [-Wformat-extra-args]
+     "npcdmod: Could not reopen file. %s", strerror(errno),
+     ^
+npcdmod.c:174:5: warning: too many arguments for format [-Wformat-extra-args]
+npcdmod.c: In function ‘npcdmod_handle_data’:
+npcdmod.c:215:12: warning: format ‘%d’ expects argument of type ‘int’, but argum                                                                                        ent 4 has type ‘__time_t {aka long int}’ [-Wformat=]
+       - 1, "DATATYPE::HOSTPERFDATA\t"
+            ^
+npcdmod.c:215:12: warning: format ‘%d’ expects argument of type ‘int’, but argum                                                                                        ent 4 has type ‘__time_t {aka long int}’ [-Wformat=]
+npcdmod.c:252:12: warning: format ‘%d’ expects argument of type ‘int’, but argum                                                                                        ent 4 has type ‘__time_t {aka long int}’ [-Wformat=]
+       - 1, "DATATYPE::SERVICEPERFDATA\t"
+            ^
+npcdmod.c:252:12: warning: format ‘%d’ expects argument of type ‘int’, but argum                                                                                        ent 4 has type ‘__time_t {aka long int}’ [-Wformat=]
+npcdmod.c: In function ‘npcdmod_process_module_args’:
+config.c: In function ‘process_configfile’:
+config.c:68:4: warning: ignoring return value of ‘fgets’, declared with attribut                                                                                        e warn_unused_result [-Wunused-result]
+    fgets(current_config_line, 1024, fh_config_file);
+    ^
+npcdmod.c:326:7: warning: implicit declaration of function ‘npcdmod_process_conf                                                                                        ig_var’ [-Wimplicit-function-declaration]
+   if (npcdmod_process_config_var(arglist[arg]) == ERROR) {
+       ^
+gcc -g -O2 -DHAVE_CONFIG_H -DNSCORE -o npcd npcd.c utils.o config.o logging.o -l                                                                                        pthread
+npcd.c: In function ‘main’:
+npcd.c:209:3: warning: ignoring return value of ‘chdir’, declared with attribute                                                                                         warn_unused_result [-Wunused-result]
+   chdir(directory);
+   ^
+npcd.c: In function ‘start_daemon’:
+npcd.c:81:2: warning: ignoring return value of ‘chdir’, declared with attribute                                                                                         warn_unused_result [-Wunused-result]
+  chdir("/");
+  ^
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/src'
+cd ./share && make
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/share'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/share'
+cd ./scripts && make
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+
+*** Compile finished ***
+
+  make install
+     - This installs the main program and HTML files
+
+Enjoy.
+
+cd ./src && make install
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/src'
+make install-basic
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/src'
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/bin
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/var/spool/pe                                                                                        rfdata/
+/usr/bin/install -c -m 754 -o nagios -g nagios npcd /usr/local/nagios/bin
+/usr/bin/install -c -m 754 -o nagios -g nagios npcdmod.o /usr/local/nagios/bin
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/src'
+make strip-post-install
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/src'
+/usr/bin/strip /usr/local/nagios/bin/npcd
+/usr/bin/strip /usr/local/nagios/bin/npcdmod.o
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/src'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/src'
+cd ./share && make install
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/share'
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/im                                                                                        ages
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/in                                                                                        clude
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/in                                                                                        clude/font
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/in                                                                                        clude/font/makefont
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/in                                                                                        clude/js
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/la                                                                                        ng/
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/te                                                                                        mplates/
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/te                                                                                        mplates.dist/
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/pnp/te                                                                                        mplates.special/
+for file in pnp/*.php; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp; done
+for file in pnp/templates.dist/*.php; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp/templates.dist; done
+for file in pnp/templates.special/*.php; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp/templates.special; done
+for file in pnp/lang/*.php; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp/lang; done
+for file in pnp/images/*; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp/images; done
+for file in pnp/include/*.*; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp/include; done
+for file in pnp/include/js/*; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp/include/js; done
+for file in pnp/include/font/*.php; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp/include/font; done
+for file in pnp/include/font/makefont/*; \
+do /usr/bin/install -c -m 644 -o nagios -g nagios $file /usr/local/nagios/share/                                                                                        pnp/include/font/makefont; done
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/share'
+cd ./scripts && make install
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/share/perfda                                                                                        ta
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/libexec
+make install-processperfdata
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+/usr/bin/install -c -m 755 -o nagios -g nagios process_perfdata.pl /usr/local/na                                                                                        gios/libexec
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+make install-plugins
+make[2]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+/usr/bin/install -c -m 755 -o nagios -g nagios check_pnp_rrds.pl /usr/local/nagi                                                                                        os/libexec
+make[2]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+cd ./sample-config && make install
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/sample-c                                                                                        onfig'
+rm -f /usr/local/nagios/share/pnp/conf/config.php
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/etc/pnp
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/etc/pnp/chec                                                                                        k_commands
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/etc/pnp/page                                                                                        s
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/pnp4nagios_release /usr/loca                                                                                        l/nagios/etc/pnp
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/config.php /usr/local/nagios                                                                                        /etc/pnp
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/background.pdf /usr/local/na                                                                                        gios/etc/pnp
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/sample-co                                                                                        nfig'
+make install-basic
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest'
+
+*** Main program, Scripts and HTML files installed ***
+
+Please run 'make install-config' to install sample
+configuration files
+
+Please run 'make install-init' if you want to use
+BULK Mode with NPCD
+
+
+
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest'
+cd ./sample-config && make install-config
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/sample-c                                                                                        onfig'
+rm -f /usr/local/nagios/share/pnp/conf/config.php
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/etc/pnp
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/etc/pnp/chec                                                                                        k_commands
+/usr/bin/install -c -m 755 -o nagios -g nagios -d /usr/local/nagios/etc/pnp/page                                                                                        s
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/config.php /usr/local/nagios                                                                                        /etc/pnp
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/process_perfdata.cfg-sample                                                                                         /usr/local/nagios/etc/pnp
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/rra.cfg-sample /usr/local/na                                                                                        gios/etc/pnp
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/check_commands/check_nwstat.                                                                                        cfg-sample /usr/local/nagios/etc/pnp/check_commands
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/pages/web_traffic.cfg-sample                                                                                         /usr/local/nagios/etc/pnp/pages
+/usr/bin/install -c -m 644 -o nagios -g nagios  pnp/npcd.cfg-sample /usr/local/n                                                                                        agios/etc/pnp
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/sample-co                                                                                        nfig'
+cd ./scripts && make install-init
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+/usr/bin/install -c -m 755 -o root -g root -d /etc/init.d
+/usr/bin/install -c -m 755 -o root -g root rc.npcd /etc/init.d/npcd
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/pnp/pnp-latest/scripts'
+INSTALL: POST-INSTALL: PNP post install is running...
+INSTALL: POST-INSTALL: PNP post install completed OK.
+INSTALL: PNP installed OK.
+Subcomponent 'pnp' installed OK
+INSTALL: NRPE is being installed...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking what the operating system is ... linux
+checking what the distribution type is ... debian
+checking what init system is being used ... systemd
+checking what inetd is being used ... xinetd
+checking for which paths to use ... default
+checking for which init file to use ... default-service
+checking for which inetd files to use ... default-xinetd
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether make sets $(MAKE)... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking for inttypes.h... (cached) yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for string.h... (cached) yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking tcpd.h usability... yes
+checking tcpd.h presence... yes
+checking for tcpd.h... yes
+checking for unistd.h... (cached) yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking socket.h usability... no
+checking socket.h presence... no
+checking for socket.h... no
+checking for sys/types.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking for sys/wait.h... (cached) yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking paths.h usability... yes
+checking paths.h presence... yes
+checking for paths.h... yes
+checking for an ANSI C-conforming const... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for mode_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking return type of signal handlers... void
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking size of int... 4
+checking size of short... 2
+checking size of long... 8
+checking for uint32_t... yes
+checking for u_int32_t... yes
+checking for int32_t... yes
+checking for struct sockaddr_storage... yes
+checking for seteuid... yes
+checking for va_copy... yes
+checking for vsnprintf... yes
+checking for snprintf... yes
+checking for asprintf... yes
+checking for vasprintf... yes
+checking for C99 vsnprintf... yes
+checking for getopt_long... yes
+checking for main in -lnsl... yes
+checking for socket in -lsocket... no
+checking for main in -lwrap... yes
+checking for strdup... yes
+checking for strstr... yes
+checking for strtoul... yes
+checking for strtok_r... yes
+checking for initgroups... yes
+checking for closesocket... no
+checking for sigaction... yes
+checking for scandir... yes
+checking for socklen_t... yes
+checking for type of socket size... size_t
+checking for Kerberos include files... configure: WARNING: could not find includ                                                                                        e files
+checking for pkg-config... pkg-config
+checking for SSL headers... found in /usr/include/openssl
+checking for SSL libraries... found in /usr/lib/x86_64-linux-gnu
+checking whether compiling and linking against SSL works... yes
+checking for openssl... /usr/bin/openssl
+
+*** Generating DH Parameters for SSL/TLS ***
+Generating DH parameters, 2048 bit long safe prime, generator 2
+This is going to take a long time
+....+..............................................+............................                                                                                        ................................................................................                                                                                        ............................................................+...................                                                                                        ................................................................................                                                                                        ..........................+.............................+.......................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ...........................................................+....................                                                                                        .....+..........................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ...........................................................+....................                                                                                        ................................................................................                                                                                        .....................................................+..........................                                                                                        ................................................................................                                                                                        ................................................+...............................                                                                                        ...................................................+............................                                                                                        ....................+...................................................+.......                                                                                        ................................................................................                                                                                        .+.................+............................................................                                                                                        ................................................................................                                                                                        .............................+.........+........................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        .+.......................................................................+......                                                                                        ................................................................................                                                                                        .................................+..................+...........................                                                                                        ......+.........................................................................                                                                                        ..............................................................................+.                                                                                        ..........................+.......................................+.............                                                                                        ........................+.......................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................+.......................+...+...................                                                                                        ...............+....+...........................................................                                                                                        ................................................................................                                                                                        ..........................................................................+.....                                                                                        ...................................................+............................                                                                                        ..................+...................+....................+....................                                                                                        ................................................................................                                                                                        ..+.............................................................................                                                                                        ......................................................+...........+.............                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................+...............                                                                                        ................................................................................                                                                                        ..........+.....................................................................                                                                                        ................................................................................                                                                                        ............+..............................+....................................                                                                                        ..........................................................................+.....                                                                                        ...........................+....................................................                                                                                        .....................................................+...............+..........                                                                                        ................................................................................                                                                                        .+......+..................+....................................................                                                                                        ...................................................+...........+................                                                                                        ....................+............................+..............................                                                                                        ................................................................................                                                                                        .......................+.+.........+.....................+......................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        .................+....+.........................................................                                                                                        ................................+.............................................+.                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        .................+..............................................................                                                                                        ..............................+.................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ..................+.............................................................                                                                                        ......................................................................+.........                                                                                        ........+................................+.............................+........                                                                                        ............+..............+....................................................                                                                                        ................................................................................                                                                                        ..................................................................+.............                                                                                        ................................................................................                                                                                        ...........................................................+....................                                                                                        ...+........................................+...................................                                                                                        ................................................................................                                                                                        .....................................................+..........................                                                                                        .......+........+..........+................................+...................                                                                                        ............................+....................................+..............                                                                                        .............................................................................+..                                                                                        ..............................+...................+.............................                                                                                        .........+.............................+........................................                                                                                        ........................+..+.......................................+............                                                                                        ................................................................................                                                                                        ..............+.................................................................                                                                                        ..............................................+.................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ........................................................................+.......                                                                                        ................................................................................                                                                                        .+..............................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ...........................+....................................................                                                                                        ................................................................................                                                                                        ....+...........................................................................                                                                                        ...............................................................+................                                                                                        ................................................................................                                                                                        .....................+.................+.....................+..................                                                                                        .......................+........................................................                                                                                        ..........+.........+..............................................+............                                                                                        +...........+...........+.......................................................                                                                                        ....+...........................................................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        .......................+..............................................+.........                                                                                        ................................................................................                                                                                        ..............................................+.................................                                                                                        .....................................................+..........................                                                                                        .................................................+..............................                                                                                        .......................................+........................................                                                                                        ................................................................................                                                                                        ................................................................................                                                                                        ................................................+..........................+....                                                                                        .............+..+................................................+..............                                                                                        ................................................................................                                                                                        ............................+....+..............................................                                                                                        .......+.....+..................................................................                                                                                        ......+.....+...................................................................                                                                                        +...............................................................................                                                                                        ......................................................................................................................................................+.............................................+......................................................................................................................+..........................................................................+.........+.........................................................................+............+.......+.............................................................................................+..........................................+..........................................................................+................................................................................................................................................................................................................................................+......................................................................................................................................................................................................+..............................................+......................................................+............................................................+...+................+...............................................+..+................................+............................................+..................+........................+......................................................+.+.................................+..................................................................+....................................................+........................................+..............................................................................................................................................................................................................................................................................................................................................................................................+....................................+..............................................................................................................................................................................................................................................................................+......+......................................................................................................................................................+....................................................................................................................................................................................................................................................................................................................................................+.........................+............+....................................................................................................................................................+................................................................................................................................................+...............................................................................................................................+............................................+.................................................................................................+......+................................................................+.......................+..........................+............................+...........+....+..........................................................................................................................................................................................+.......................................................+.............................................................................................................................................................................................................................................................................................................................+..........................+........................+...............................+...............................................................................................................................................................+...........................................................................................................................+.....................+......................................................+........................+..............................................................................................................................+.................................+......................................................................................+..........................................+...................+.........................................................................................................+.........................................................+.............................................................................................................................................................................................................................................+.............................................................................................................+...................................+.......................................................................................................................................................................................+...................+...................................................................................+....+..........................+..........................................................................+...............................+............+...............+.....................................................................................+..................+.................................................................+.............................................................................................................................................................................+........................................................................................................+......................+.....................................................................................................................................................................................................................+................................................................................+...............................................................+....................................................................................................+..........................................................................................................................+.......................................................................................................................+..........................+....................................................................+.........................................................................................................................................................................+.................................................++*++*
+checking for perl... /usr/bin/perl
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating nrpe.spec
+config.status: creating uninstall
+config.status: creating sample-config/nrpe.cfg
+config.status: creating startup/bsd-init
+config.status: creating startup/debian-init
+config.status: creating startup/default-init
+config.status: creating startup/default-inetd
+config.status: creating startup/default-service
+config.status: creating startup/default-socket
+config.status: creating startup/default-socket-svc
+config.status: creating startup/default-xinetd
+config.status: creating startup/mac-init.plist
+config.status: creating startup/mac-inetd.plist
+config.status: creating startup/newbsd-init
+config.status: creating startup/openbsd-init
+config.status: creating startup/openrc-conf
+config.status: creating startup/openrc-init
+config.status: creating startup/solaris-init.xml
+config.status: creating startup/solaris-inetd.xml
+config.status: creating startup/tmpfile.conf
+config.status: creating startup/upstart-init
+config.status: creating startup/rh-upstart-init
+config.status: creating include/common.h
+config.status: creating include/config.h
+
+
+*** Configuration summary for nrpe 3.2.1 2017-09-01 ***:
+
+ General Options:
+ -------------------------
+ NRPE port:    5666
+ NRPE user:    nagios
+ NRPE group:   nagios
+ Nagios user:  nagios
+ Nagios group: nagios
+
+
+Review the options above for accuracy.  If they look okay,
+type 'make all' to compile the NRPE daemon and client
+or type 'make' to get a list of make options.
+
+cd ./src/; make
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nrpe/nrpe-3.2.1/src'
+gcc -g -O2 -I/usr/include/openssl -DHAVE_CONFIG_H -I ../include -I ./../include -o nrpe ./nrpe.c ./utils.c ./acl.c -L/usr/lib/x86_64-linux-gnu  -lssl -lcrypto -lnsl -lwrap
+gcc -g -O2 -I/usr/include/openssl -DHAVE_CONFIG_H -I ../include -I ./../include -o check_nrpe ./check_nrpe.c ./utils.c -L/usr/lib/x86_64-linux-gnu  -lssl -lcrypto -lnsl
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nrpe/nrpe-3.2.1/src'
+
+*** Compile finished ***
+
+You can now continue with the installation or upgrade process.
+
+Read the PDF documentation (docs/NRPE.pdf) for information on the next
+steps you should take to complete the installation or upgrade.
+
+cd ./src/; make install-plugin
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nrpe/nrpe-3.2.1/src'
+/usr/bin/install -c -m 755 -d /usr/local/nagios/bin
+/usr/bin/install -c -m 755 ../uninstall /usr/local/nagios/bin/nrpe-uninstall
+/usr/bin/install -c -m 775 -o nagios -g nagios -d /usr/local/nagios/libexec
+/usr/bin/install -c -m 775 -o nagios -g nagios -d /usr/local/nagios/libexec
+/usr/bin/install -c -m 775 -o nagios -g nagios check_nrpe /usr/local/nagios/libexec
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nrpe/nrpe-3.2.1/src'
+cd ./src/; make install-daemon
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nrpe/nrpe-3.2.1/src'
+/usr/bin/install -c -m 755 -d /usr/local/nagios/bin
+/usr/bin/install -c -m 755 ../uninstall /usr/local/nagios/bin/nrpe-uninstall
+/usr/bin/install -c -m 755 nrpe /usr/local/nagios/bin
+/usr/bin/install -c -m 755 -d /usr/lib/tmpfiles.d
+/usr/bin/install -c -m 644 ../startup/tmpfile.conf /usr/lib/tmpfiles.d/nrpe.conf
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nrpe/nrpe-3.2.1/src'
+/usr/bin/install -c -m 775 -o nagios -g nagios -d /usr/local/nagios/etc
+/usr/bin/install -c -m 644 -o nagios -g nagios sample-config/nrpe.cfg /usr/local/nagios/etc
+/usr/bin/install -c -m 644 startup/default-service /lib/systemd/system/nrpe.service
+INSTALL: NRPE installed OK.
+Subcomponent 'nrpe' installed OK
+INSTALL: NSCA is being installed...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables...
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether make sets $(MAKE)... yes
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking db.h usability... no
+checking db.h presence... no
+checking for db.h... no
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking grp.h usability... yes
+checking grp.h presence... yes
+checking for grp.h... yes
+checking for inttypes.h... (cached) yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking pwd.h usability... yes
+checking pwd.h presence... yes
+checking for pwd.h... yes
+checking regex.h usability... yes
+checking regex.h presence... yes
+checking for regex.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for stdint.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for string.h... (cached) yes
+checking syslog.h usability... yes
+checking syslog.h presence... yes
+checking for syslog.h... yes
+checking tcpd.h usability... yes
+checking tcpd.h presence... yes
+checking for tcpd.h... yes
+checking for unistd.h... (cached) yes
+checking arpa/inet.h usability... yes
+checking arpa/inet.h presence... yes
+checking for arpa/inet.h... yes
+checking netinet/in.h usability... yes
+checking netinet/in.h presence... yes
+checking for netinet/in.h... yes
+checking sys/config.h usability... no
+checking sys/config.h presence... no
+checking for sys/config.h... no
+checking sys/int_types.h usability... no
+checking sys/int_types.h presence... no
+checking for sys/int_types.h... no
+checking sys/poll.h usability... yes
+checking sys/poll.h presence... yes
+checking for sys/poll.h... yes
+checking for sys/types.h... (cached) yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/resource.h usability... yes
+checking sys/resource.h presence... yes
+checking for sys/resource.h... yes
+checking sys/socket.h usability... yes
+checking sys/socket.h presence... yes
+checking for sys/socket.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/wait.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for working volatile... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for mode_t... yes
+checking for pid_t... yes
+checking for size_t... yes
+checking return type of signal handlers... void
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking size of int... 4
+checking size of short... 2
+checking size of long... 8
+checking for uint32_t... yes
+checking for u_int32_t... yes
+checking for int32_t... yes
+checking for main in -lnsl... yes
+checking for socket in -lsocket... no
+checking for main in -lwrap... yes
+checking for strdup... yes
+checking for strstr... yes
+checking for strtoul... yes
+checking for sigaction... yes
+checking for sig_atomic_t... yes
+checking for socklen_t... yes
+checking for type of socket size... size_t
+checking for libmcrypt-config... /usr/bin/libmcrypt-config
+checking for libmcrypt - version >= 2.4.11... yes
+checking for perl... /usr/bin/perl
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating subst
+config.status: WARNING:  'subst.in' seems to ignore the --datarootdir setting
+config.status: creating src/Makefile
+config.status: creating package/solaris/Makefile
+config.status: creating init-script
+config.status: creating sample-config/nsca.cfg
+config.status: creating sample-config/send_nsca.cfg
+config.status: creating sample-config/nsca.xinetd
+config.status: creating include/config.h
+
+
+*** Configuration summary for nsca 2.9.2 12-07-2016 ***:
+
+ General Options:
+ -------------------------
+ NSCA port:  5667
+ NSCA user:  nagios
+ NSCA group: nagios
+
+
+Review the options above for accuracy.  If they look okay,
+type 'make all' to compile the NSCA daemon and client.
+
+cd ./src/; make all ; cd ..
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/nsca/nsca-2.9.2/src'
+gcc -g -O2 -DHAVE_LIBMCRYPT -I/usr/include -DHAVE_CONFIG_H -o nsca ./nsca.c ./netutils.c ./utils.c -L/usr/lib -lmcrypt  -lnsl -lwrap
+gcc -g -O2 -DHAVE_LIBMCRYPT -I/usr/include -DHAVE_CONFIG_H -o send_nsca ./send_nsca.c ./netutils.c ./utils.c -L/usr/lib -lmcrypt  -lnsl
+./send_nsca.c: In function ‘main’:
+./send_nsca.c:301:11: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+    printf("Warning: Sent only %d of %d bytes to host\n",rc,sizeof(send_packet));
+           ^
+./send_nsca.c: In function ‘read_init_packet’:
+./send_nsca.c:373:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+                 printf("Error: Init packet from server was too short (%d bytes received, %d expected)\n",bytes_to_recv,sizeof(receive_packet));
+                        ^
+./nsca.c: In function ‘read_config_file’:
+./nsca.c:492:29: warning: implicit declaration of function ‘asprintf’ [-Wimplicit-function-declaration]
+                             asprintf(&checkresult_test,"%s/nsca.test.%i",check_result_path,getpid());
+                             ^
+./send_nsca.c: In function ‘alarm_handler’:
+./send_nsca.c:483:2: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+  write(STDOUT_FILENO, msg, sizeof(msg) - 1);
+  ^
+./nsca.c: In function ‘handle_connection’:
+./nsca.c:1055:32: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+                 syslog(LOG_ERR,"Only able to send %d of %d bytes of init packet to client\n",rc,sizeof(send_packet));
+                                ^
+./nsca.c: In function ‘write_checkresult_file’:
+./nsca.c:1262:37: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘time_t {aka long int}’ [-Wformat=]
+         fprintf(checkresult_file_fp,"file_time=%d\n\n",current_time);
+                                     ^
+./nsca.c: In function ‘main’:
+./nsca.c:156:3: warning: ignoring return value of ‘getcwd’, declared with attribute warn_unused_result [-Wunused-result]
+   getcwd(config_file,sizeof(config_file));
+   ^
+./nsca.c: In function ‘write_pid_file’:
+./nsca.c:1466:3: warning: ignoring return value of ‘write’, declared with attribute warn_unused_result [-Wunused-result]
+   write(fd,pbuf,strlen(pbuf));
+   ^
+./nsca.c:1467:3: warning: ignoring return value of ‘fchown’, declared with attribute warn_unused_result [-Wunused-result]
+   fchown(fd,usr,grp);
+   ^
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/nsca/nsca-2.9.2/src'
+
+*** Compile finished ***
+
+If the compile finished without any errors, you should
+find client and server binaries in the src/ subdirectory.
+
+Read the README file for more information on installing
+the binaries, creating configuration files, and using
+the server and client.
+
+INSTALL: POST-INSTALL: NSCA post install is running...
+INSTALL: POST-INSTALL: NSCA post install completed OK.
+INSTALL: NSCA installed OK.
+Subcomponent 'nsca' installed OK
+INSTALL: NRDP is being installed...
+INSTALL: NRDP was installed OK.
+Subcomponent 'nrdp' installed OK
+INSTALL: Nagios CCM is being installed...
+NOTE: If prompted, enter the MySQL root password
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+mysql: [Warning] Using a password on the command line interface can be insecure.
+NOTE: If prompted, enter the MySQL root password
+CCM database appears OK
+INSTALL: Nagios CCM installed OK.
+Subcomponent 'ccm' installed OK
+INSTALL: Extra Plugins are being installed...
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking how to create a pax tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether make sets $(MAKE)... (cached) yes
+variable with_statefiles_dir is /var/tmp/check_mysql_health
+variable with_mymodules_dir is /usr/local/nagios/libexec
+variable with_mymodules_dyn_dir is /usr/local/nagios/libexec
+checking for sh... /bin/sh
+checking for perl... /usr/bin/perl
+checking for gzip... /bin/gzip
+checking for gawk... /usr/bin/gawk
+checking for grep... /bin/grep
+checking for echo... /bin/echo
+checking for sed... /bin/sed
+checking for cat... /bin/cat
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating plugins-scripts/Makefile
+config.status: creating plugins-scripts/subst
+config.status: creating t/Makefile
+                       --with-perl: /usr/bin/perl
+             --with-statefiles-dir: /var/tmp/check_mysql_health
+                --with-nagios-user: nagios
+               --with-nagios-group: nagios
+              --with-mymodules-dir: /usr/local/nagios/libexec
+          --with-mymodules-dyn-dir: /usr/local/nagios/libexec
+Making clean in t
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2/t'
+make[1]: Nothing to be done for 'clean'.
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2/t'
+Making clean in plugins-scripts
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2/plugins-scripts'
+test -z "check_mysql_health" || rm -f check_mysql_health
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2/plugins-scripts'
+Making clean in .
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2'
+make[1]: Nothing to be done for 'clean-am'.
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2'
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking how to create a pax tar archive... gnutar
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether make sets $(MAKE)... (cached) yes
+variable with_statefiles_dir is /var/tmp/check_mysql_health
+variable with_mymodules_dir is /usr/local/nagios/libexec
+variable with_mymodules_dyn_dir is /usr/local/nagios/libexec
+checking for sh... /bin/sh
+checking for perl... /usr/bin/perl
+checking for gzip... /bin/gzip
+checking for gawk... /usr/bin/gawk
+checking for grep... /bin/grep
+checking for echo... /bin/echo
+checking for sed... /bin/sed
+checking for cat... /bin/cat
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating plugins-scripts/Makefile
+config.status: creating plugins-scripts/subst
+config.status: creating t/Makefile
+                       --with-perl: /usr/bin/perl
+             --with-statefiles-dir: /var/tmp/check_mysql_health
+                --with-nagios-user: nagios
+               --with-nagios-group: nagios
+              --with-mymodules-dir: /usr/local/nagios/libexec
+          --with-mymodules-dyn-dir: /usr/local/nagios/libexec
+Making all in plugins-scripts
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2/plugins-scripts'
+/bin/echo "#! #PERL# -w" | /usr/bin/gawk -f ./subst > check_mysql_health
+/bin/echo "# nagios: -epn" >> check_mysql_health
+/bin/echo >> check_mysql_health
+/bin/echo "my %ERRORS=( OK => 0, WARNING => 1, CRITICAL => 2, UNKNOWN => 3 );" >> check_mysql_health
+/bin/echo "my %ERRORCODES=( 0 => 'OK', 1 => 'WARNING', 2 => 'CRITICAL', 3 => 'UNKNOWN' );" >> check_mysql_health
+for m in Nagios/DBD/MySQL/Server/Instance/Innodb.pm Nagios/DBD/MySQL/Server/Instance/Myisam.pm Nagios/DBD/MySQL/Server/Instance/Replication.pm Nagios/DBD/MySQL/Server/Instance.pm Nagios/DBD/MySQL/Server.pm Nagios/DBD/MySQL/Cluster.pm Nagios/Extraopts.pm; do \
+        /bin/sed -e 's/^1;//g' < $m | /usr/bin/gawk -f ./subst | /bin/grep -v "my %ERROR" >> check_mysql_health; \
+done
+if [ -d "/usr/local/nagios/libexec" ]; then \
+        for m in /usr/local/nagios/libexec/CheckMySQLHealthExt*.pm; do \
+                if [ -f $m ]; then \
+                        /bin/echo found $m; \
+                        /bin/sed -e 's/^1;//g' < $m | /usr/bin/gawk -f ./subst | /bin/grep -v "my %ERROR" >> check_mysql_health; \
+                fi \
+        done \
+fi
+/bin/cat check_mysql_health.pl | /bin/grep -v "^use Nagios" | /bin/grep -v "^my %ERROR" | /usr/bin/gawk -f ./subst >> check_mysql_health
+chmod +x check_mysql_health
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2/plugins-scripts'
+Making all in t
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2/t'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2/t'
+make[1]: Entering directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2'
+make[1]: Nothing to be done for 'all-am'.
+make[1]: Leaving directory '/tmp/nagiosxi/subcomponents/extraplugins/check_mysql_health-2.1.8.2'
+Checking if your kit is complete...
+Looks good
+WARNING: ABSTRACT contains control character(s), they will be removed
+Generating a Unix-style Makefile
+Writing Makefile for Nagios::Monitoring::Plugin
+Writing MYMETA.yml and MYMETA.json
+cp lib/Nagios/Monitoring/Plugin/Functions.pm blib/lib/Nagios/Monitoring/Plugin/Functions.pm
+cp lib/Nagios/Monitoring/Plugin.pm blib/lib/Nagios/Monitoring/Plugin.pm
+cp lib/Nagios/Monitoring/Plugin/Range.pm blib/lib/Nagios/Monitoring/Plugin/Range.pm
+cp lib/Nagios/Monitoring/Plugin/ExitResult.pm blib/lib/Nagios/Monitoring/Plugin/ExitResult.pm
+cp lib/Nagios/Monitoring/Plugin/Config.pm blib/lib/Nagios/Monitoring/Plugin/Config.pm
+cp lib/Nagios/Monitoring/Plugin/Performance.pm blib/lib/Nagios/Monitoring/Plugin/Performance.pm
+cp lib/Nagios/Monitoring/Plugin/Threshold.pm blib/lib/Nagios/Monitoring/Plugin/Threshold.pm
+cp lib/Nagios/Monitoring/Plugin/Getopt.pm blib/lib/Nagios/Monitoring/Plugin/Getopt.pm
+Manifying 8 pod documents
+PERL_DL_NONLAZY=1 "/usr/bin/perl" "-MExtUtils::Command::MM" "-MTest::Harness" "-e" "undef *Test::Harness::Switches; test_harness(0, 'blib/lib', 'blib/arch')" t/*.t
+t/check_stuff.t .............................. ok
+t/Nagios-Monitoring-Plugin-01.t .............. ok
+t/Nagios-Monitoring-Plugin-02.t .............. ok
+t/Nagios-Monitoring-Plugin-03.t .............. ok
+t/Nagios-Monitoring-Plugin-04.t .............. ok
+t/Nagios-Monitoring-Plugin-Functions-01.t .... ok
+t/Nagios-Monitoring-Plugin-Functions-02.t .... ok
+t/Nagios-Monitoring-Plugin-Functions-03.t .... ok
+t/Nagios-Monitoring-Plugin-Getopt-01.t ....... ok
+t/Nagios-Monitoring-Plugin-Getopt-02.t ....... ok
+t/Nagios-Monitoring-Plugin-Getopt-03.t ....... ok
+t/Nagios-Monitoring-Plugin-Getopt-04.t ....... ok
+t/Nagios-Monitoring-Plugin-Performance-02.t .. ok
+t/Nagios-Monitoring-Plugin-Performance.t ..... ok
+t/Nagios-Monitoring-Plugin-Range.t ........... ok
+t/Nagios-Monitoring-Plugin-Threshold.t ....... ok
+All tests successful.
+Files=16, Tests=975,  4 wallclock secs ( 0.17 usr  0.03 sys +  3.80 cusr  0.23 csys =  4.23 CPU)
+Result: PASS
+Manifying 8 pod documents
+Installing /usr/local/share/perl/5.22.1/Nagios/Monitoring/Plugin.pm
+Installing /usr/local/share/perl/5.22.1/Nagios/Monitoring/Plugin/Performance.pm
+Installing /usr/local/share/perl/5.22.1/Nagios/Monitoring/Plugin/Config.pm
+Installing /usr/local/share/perl/5.22.1/Nagios/Monitoring/Plugin/Threshold.pm
+Installing /usr/local/share/perl/5.22.1/Nagios/Monitoring/Plugin/Functions.pm
+Installing /usr/local/share/perl/5.22.1/Nagios/Monitoring/Plugin/ExitResult.pm
+Installing /usr/local/share/perl/5.22.1/Nagios/Monitoring/Plugin/Getopt.pm
+Installing /usr/local/share/perl/5.22.1/Nagios/Monitoring/Plugin/Range.pm
+Installing /usr/local/man/man3/Nagios::Monitoring::Plugin::Performance.3pm
+Installing /usr/local/man/man3/Nagios::Monitoring::Plugin.3pm
+Installing /usr/local/man/man3/Nagios::Monitoring::Plugin::Functions.3pm
+Installing /usr/local/man/man3/Nagios::Monitoring::Plugin::Threshold.3pm
+Installing /usr/local/man/man3/Nagios::Monitoring::Plugin::Config.3pm
+Installing /usr/local/man/man3/Nagios::Monitoring::Plugin::ExitResult.3pm
+Installing /usr/local/man/man3/Nagios::Monitoring::Plugin::Range.3pm
+Installing /usr/local/man/man3/Nagios::Monitoring::Plugin::Getopt.3pm
+Appending installation info to /usr/local/lib/x86_64-linux-gnu/perl/5.22.1/perllocal.pod
+INSTALL: Extra Plugins installed OK.
+Subcomponent 'extraplugins' installed OK
+INSTALL: Installing Nagios Mobile...
+Copying apache configuration file...
+Creating web directory...
+Copying files...
+Cleaning up...
+Restarting apache...
+Restarting apache2 (via systemctl): apache2.service.
+Nagios Mobile Install Complete!
+INSTALL: Nagios Mobile installed OK.
+Subcomponent 'nagiosmobile' installed OK
+INSTALL: Webinject is being installed...
+INSTALL: Webinject installed OK.
+Subcomponent 'webinject' installed OK
+INSTALL: SSH Terminal is being installed...
+Considering dependency setenvif for ssl:
+Module setenvif already enabled
+Considering dependency mime for ssl:
+Module mime already enabled
+Considering dependency socache_shmcb for ssl:
+Module socache_shmcb already enabled
+Module ssl already enabled
+Enabling module proxy.
+To activate the new configuration, you need to run:
+  service apache2 restart
+Considering dependency proxy for proxy_http:
+Module proxy already enabled
+Enabling module proxy_http.
+To activate the new configuration, you need to run:
+  service apache2 restart
+Site default-ssl already enabled
+apache2.service is not active, cannot reload.
+ERROR: Subcomponent 'sshterminal' installation failed - exiting.
+Subcomponents installation failed - exiting
+RESULT=1
+
+===================
+INSTALLATION ERROR!
+===================
+Installation step failed - exiting.
+Check for error messages in the install log (install.log).
+
+If you require assistance in resolving the issue, please include install.log
+in your communications with Nagios XI technical support.
+
+The script that failed was: './A-subcomponents'
+root@gauyanvflexcom:~# ^C
+root@gauyanvflexcom:~# ^C
+root@gauyanvflexcom:~#
